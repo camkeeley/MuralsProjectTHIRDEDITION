@@ -13,6 +13,8 @@
 		A879AC242579E42C00397289 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A879AC222579E42C00397289 /* Main.storyboard */; };
 		A879AC262579E42D00397289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A879AC252579E42D00397289 /* Assets.xcassets */; };
 		A879AC292579E42D00397289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A879AC272579E42D00397289 /* LaunchScreen.storyboard */; };
+		A879AC532579F06100397289 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879AC522579F06100397289 /* MapViewController.swift */; };
+		A879AC552579F6FC00397289 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879AC542579F6FC00397289 /* GalleryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A879AC252579E42D00397289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A879AC282579E42D00397289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A879AC2A2579E42D00397289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A879AC522579F06100397289 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A879AC542579F6FC00397289 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				A879AC1C2579E42C00397289 /* AppDelegate.swift */,
 				A879AC1E2579E42C00397289 /* SceneDelegate.swift */,
-				A879AC202579E42C00397289 /* ViewController.swift */,
 				A879AC222579E42C00397289 /* Main.storyboard */,
 				A879AC252579E42D00397289 /* Assets.xcassets */,
 				A879AC272579E42D00397289 /* LaunchScreen.storyboard */,
 				A879AC2A2579E42D00397289 /* Info.plist */,
+				A879AC202579E42C00397289 /* ViewController.swift */,
+				A879AC522579F06100397289 /* MapViewController.swift */,
+				A879AC542579F6FC00397289 /* GalleryViewController.swift */,
 			);
 			path = TSP;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				A879AC212579E42C00397289 /* ViewController.swift in Sources */,
 				A879AC1D2579E42C00397289 /* AppDelegate.swift in Sources */,
+				A879AC552579F6FC00397289 /* GalleryViewController.swift in Sources */,
 				A879AC1F2579E42C00397289 /* SceneDelegate.swift in Sources */,
+				A879AC532579F06100397289 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
