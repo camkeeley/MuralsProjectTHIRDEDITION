@@ -96,18 +96,109 @@
         <!--Gallery View Controller-->
         <scene sceneID="ZPT-LM-Exs">
             <objects>
-                <viewController id="TVy-Hk-tUG" customClass="GalleryViewController" sceneMemberID="viewController">
+                <viewController id="TVy-Hk-tUG" customClass="GalleryViewController" customModule="TSP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nqC-Wb-MU6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-Mh-0Ym">
+                                <rect key="frame" x="20" y="362" width="260" height="273"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="273" id="0tm-Vs-E9b"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="MuralTwo"/>
+                                <connections>
+                                    <action selector="MuralTwoPressed:" destination="TVy-Hk-tUG" eventType="touchUpInside" id="oZz-CF-7rH"/>
+                                    <segue destination="KCu-FC-IR4" kind="show" id="EsL-yj-k9S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-wo-4aG">
+                                <rect key="frame" x="60" y="652" width="294" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="237" id="3eO-Lc-FB1"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="MuralThree"/>
+                                <connections>
+                                    <action selector="MuralThreePressed:" destination="TVy-Hk-tUG" eventType="touchUpInside" id="fjd-3n-SOR"/>
+                                    <segue destination="KCu-FC-IR4" kind="show" id="KJr-UP-Sft"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9D2-eg-39Q">
+                                <rect key="frame" x="241" y="402" width="163" height="222"/>
+                                <state key="normal" title="Button" image="MuralFour"/>
+                                <connections>
+                                    <action selector="MuralFourPressed:" destination="TVy-Hk-tUG" eventType="touchUpInside" id="XdH-ke-Osg"/>
+                                    <segue destination="KCu-FC-IR4" kind="show" id="bVf-uc-ucy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ix-UF-RZc">
+                                <rect key="frame" x="27" y="113" width="360" height="229"/>
+                                <state key="normal" title="Button" image="MuralOne"/>
+                                <connections>
+                                    <action selector="MuralOnePressed:" destination="TVy-Hk-tUG" eventType="touchUpInside" id="49A-8g-Hkf"/>
+                                    <segue destination="KCu-FC-IR4" kind="show" id="1WC-Dg-DeH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9D2-eg-39Q" firstAttribute="leading" secondItem="h0Z-Mh-0Ym" secondAttribute="trailing" constant="-39" id="84O-0B-FRb"/>
+                            <constraint firstItem="Inj-wo-4aG" firstAttribute="leading" secondItem="1q8-sC-gKe" secondAttribute="leading" constant="60" id="Bq4-Ri-dEF"/>
+                            <constraint firstItem="9D2-eg-39Q" firstAttribute="top" secondItem="4Ix-UF-RZc" secondAttribute="bottom" constant="60" id="Ks5-b9-QGV"/>
+                            <constraint firstItem="Inj-wo-4aG" firstAttribute="centerX" secondItem="4Ix-UF-RZc" secondAttribute="centerX" id="N2v-LW-jSn"/>
+                            <constraint firstItem="Inj-wo-4aG" firstAttribute="top" secondItem="h0Z-Mh-0Ym" secondAttribute="bottom" constant="17" id="TGn-ge-9Ea"/>
+                            <constraint firstItem="Inj-wo-4aG" firstAttribute="centerX" secondItem="nqC-Wb-MU6" secondAttribute="centerX" id="bhg-FW-S8w"/>
+                            <constraint firstItem="Inj-wo-4aG" firstAttribute="top" secondItem="9D2-eg-39Q" secondAttribute="bottom" constant="28" id="e1e-qj-STB"/>
+                            <constraint firstItem="h0Z-Mh-0Ym" firstAttribute="leading" secondItem="nqC-Wb-MU6" secondAttribute="leadingMargin" id="tBt-v9-xcP"/>
+                            <constraint firstItem="1q8-sC-gKe" firstAttribute="trailing" secondItem="9D2-eg-39Q" secondAttribute="trailing" constant="10" id="x6s-Bh-BNc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Inj-wo-4aG" secondAttribute="bottom" constant="-27" id="xqu-Zr-Ucn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1q8-sC-gKe"/>
                     </view>
                     <navigationItem key="navigationItem" id="Lid-am-pfX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUE-n8-85K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1909" y="510"/>
+            <point key="canvasLocation" x="1908.6956521739132" y="509.59821428571428"/>
+        </scene>
+        <!--Gallery Display View Controller-->
+        <scene sceneID="YQU-qr-YYB">
+            <objects>
+                <viewController id="KCu-FC-IR4" customClass="GalleryDisplayViewController" customModule="TSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bQf-bb-fEB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="brO-sa-thR">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="brO-sa-thR" firstAttribute="top" secondItem="mEm-US-o0p" secondAttribute="top" id="0Zb-pg-eSy"/>
+                            <constraint firstItem="brO-sa-thR" firstAttribute="leading" secondItem="mEm-US-o0p" secondAttribute="leading" id="n4X-ua-fjJ"/>
+                            <constraint firstItem="mEm-US-o0p" firstAttribute="bottom" secondItem="brO-sa-thR" secondAttribute="bottom" id="p1f-dR-Y6A"/>
+                            <constraint firstItem="mEm-US-o0p" firstAttribute="trailing" secondItem="brO-sa-thR" secondAttribute="trailing" id="pCp-q2-hYH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mEm-US-o0p"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tb6-oV-aBH"/>
+                    <connections>
+                        <outlet property="imageView" destination="brO-sa-thR" id="FXz-Ug-3AP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJz-3M-r15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2808.6956521739135" y="509.59821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MuralFour" width="167" height="222"/>
+        <image name="MuralOne" width="306" height="229"/>
+        <image name="MuralThree" width="294" height="235"/>
+        <image name="MuralTwo" width="206" height="275"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="EsL-yj-k9S"/>
+    </inferredMetricsTieBreakers>
 </document>

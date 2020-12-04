@@ -7,16 +7,34 @@
 //
 
 import UIKit
+var db:SQLiteDatabase = SQLiteDatabase()
+var mural1 = Mural(id: 1, xLocation: 32, yLocation: 67, name: "chicano art", artist: "chicano artist", description: "pretty painting", historicalContext: "Charmander is a fire-type Pokemon, kind of like a small fire salamander.", imagePath: "MuralOne")
+
+var mural2 = Mural(id: 2, xLocation: 32, yLocation: 67, name: "chicano art", artist: "chicano artist", description: "pretty painting", historicalContext: "Squirtle is a water-type Pokemon, and is basically just a turtle.", imagePath: "MuralTwo")
+
+var mural3 = Mural(id: 3, xLocation: 32, yLocation: 67, name: "chicano art", artist: "chicano artist", description: "pretty painting", historicalContext: "Bublasaur is a leaf-type Pokemon, a dinosaur crossed with a venomous, leafy plant.", imagePath: "MuralThree")
+
+var mural4 = Mural(id: 4, xLocation: 32, yLocation: 67, name: "chicano art", artist: "chicano artist", description: "pretty painting", historicalContext: "Bublasaur is a leaf-type Pokemon, a dinosaur crossed with a venomous, leafy plant.", imagePath: "MuralFour")
 
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       
+         do{
+                
+                   
+                   
+                 try db.insertIntoTable(mural: mural1)
+                     db.insertIntoTable(mural: mural2)
+                     db.insertIntoTable(mural: mural3)
+                     db.insertIntoTable(mural: mural4)
+
+
+               } catch {
+                   print("Failed to call insertMural function from viewDidLoad function")
+               }
         
-        
-        print("test")
     }
     
 /*
