@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A867377E257A2D03008C01AA /* GalleryDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A867377D257A2D03008C01AA /* GalleryDisplayViewController.swift */; };
+		A8673780257A2FA9008C01AA /* globalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A867377F257A2FA9008C01AA /* globalVariables.swift */; };
 		A879AC1D2579E42C00397289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879AC1C2579E42C00397289 /* AppDelegate.swift */; };
 		A879AC1F2579E42C00397289 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879AC1E2579E42C00397289 /* SceneDelegate.swift */; };
 		A879AC212579E42C00397289 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879AC202579E42C00397289 /* ViewController.swift */; };
@@ -15,9 +17,13 @@
 		A879AC292579E42D00397289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A879AC272579E42D00397289 /* LaunchScreen.storyboard */; };
 		A879AC532579F06100397289 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879AC522579F06100397289 /* MapViewController.swift */; };
 		A879AC552579F6FC00397289 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879AC542579F6FC00397289 /* GalleryViewController.swift */; };
+		A879AC77257A16B300397289 /* DatabaseManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879AC76257A16B300397289 /* DatabaseManagement.swift */; };
+		A879AC79257A16E600397289 /* muralStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879AC78257A16E600397289 /* muralStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A867377D257A2D03008C01AA /* GalleryDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDisplayViewController.swift; sourceTree = "<group>"; };
+		A867377F257A2FA9008C01AA /* globalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalVariables.swift; sourceTree = "<group>"; };
 		A879AC192579E42C00397289 /* TSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A879AC1C2579E42C00397289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A879AC1E2579E42C00397289 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		A879AC2A2579E42D00397289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A879AC522579F06100397289 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A879AC542579F6FC00397289 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		A879AC76257A16B300397289 /* DatabaseManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagement.swift; sourceTree = "<group>"; };
+		A879AC78257A16E600397289 /* muralStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muralStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				A879AC202579E42C00397289 /* ViewController.swift */,
 				A879AC522579F06100397289 /* MapViewController.swift */,
 				A879AC542579F6FC00397289 /* GalleryViewController.swift */,
+				A867377D257A2D03008C01AA /* GalleryDisplayViewController.swift */,
+				A879AC76257A16B300397289 /* DatabaseManagement.swift */,
+				A879AC78257A16E600397289 /* muralStruct.swift */,
+				A867377F257A2FA9008C01AA /* globalVariables.swift */,
 			);
 			path = TSP;
 			sourceTree = "<group>";
@@ -146,9 +158,13 @@
 			files = (
 				A879AC212579E42C00397289 /* ViewController.swift in Sources */,
 				A879AC1D2579E42C00397289 /* AppDelegate.swift in Sources */,
+				A867377E257A2D03008C01AA /* GalleryDisplayViewController.swift in Sources */,
+				A8673780257A2FA9008C01AA /* globalVariables.swift in Sources */,
+				A879AC79257A16E600397289 /* muralStruct.swift in Sources */,
 				A879AC552579F6FC00397289 /* GalleryViewController.swift in Sources */,
 				A879AC1F2579E42C00397289 /* SceneDelegate.swift in Sources */,
 				A879AC532579F06100397289 /* MapViewController.swift in Sources */,
+				A879AC77257A16B300397289 /* DatabaseManagement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

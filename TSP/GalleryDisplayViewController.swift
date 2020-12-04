@@ -1,44 +1,26 @@
 //
-//  GalleryViewController.swift
+//  GalleryDisplayViewController.swift
 //  TSP
 //
-//  Created by William Keeley on 12/3/20.
+//  Created by William Keeley on 12/4/20.
 //  Copyright © 2020 CamKeeleyApps. All rights reserved.
 //
 
 import UIKit
 
-class GalleryViewController: UIViewController {
+class GalleryDisplayViewController: UIViewController {
 
-    
-
-    
-
-    
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        imageView.image = UIImage(named: db.getImageName(muralIdNumber: muralIdPressed))
     }
     
-    @IBAction func MuralOnePressed(_ sender: Any) {
-        muralIdPressed = 1
 
-    }
-    
-    @IBAction func MuralTwoPressed(_ sender: Any) {
-        muralIdPressed = 2
-
-    }
-    @IBAction func MuralThreePressed(_ sender: Any) {
-        muralIdPressed = 3
-
-    }
-    @IBAction func MuralFourPressed(_ sender: Any) {
-        muralIdPressed = 4
-
-    }
-   
     /*
     // MARK: - Navigation
 
